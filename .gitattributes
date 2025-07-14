@@ -1,6 +1,5 @@
 # Auto-detect text files and normalize to LF in-repo:
 * text=auto
-
 # Force these C++ files to LF in the repo
 *.cpp text eol=lf
 *.h   text eol=lf
