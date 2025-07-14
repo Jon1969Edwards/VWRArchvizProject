@@ -1,0 +1,21 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "VWR Archviz Config",
+	"Description": "Blueprint-friendly Archviz configurator: spawn actors, auto-rotate, attach, swap materials, switch views, UMG UI.",
+	"Category": "Editor & Runtime",
+	"CreatedBy": "Jon Edwards",
+	"Modules": [
+		{
+			"Name": "VWRArchvizConfig",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "VWRArchvizConfigEditor",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit"
+		}
+	]
+}

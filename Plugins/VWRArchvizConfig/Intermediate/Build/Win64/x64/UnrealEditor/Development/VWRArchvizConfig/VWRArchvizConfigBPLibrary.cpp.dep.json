@@ -1,0 +1,21 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\unreal projects\\5.4\\vwrarchvizproject\\plugins\\vwrarchvizconfig\\source\\vwrarchvizconfig\\private\\vwrarchvizconfigbplibrary.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\unreal projects\\5.4\\vwrarchvizproject\\intermediate\\build\\win64\\x64\\vwrarchvizprojecteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.inclorderoldest.h.pch",
+        "Includes": [
+            "e:\\unreal projects\\5.4\\vwrarchvizproject\\plugins\\vwrarchvizconfig\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\vwrarchvizconfig\\definitions.vwrarchvizconfig.h",
+            "e:\\unreal projects\\5.4\\vwrarchvizproject\\plugins\\vwrarchvizconfig\\source\\vwrarchvizconfig\\public\\vwrarchvizconfigbplibrary.h",
+            "e:\\unreal projects\\5.4\\vwrarchvizproject\\plugins\\vwrarchvizconfig\\intermediate\\build\\win64\\unrealeditor\\inc\\vwrarchvizconfig\\uht\\vwrarchvizconfigbplibrary.generated.h",
+            "e:\\unreal projects\\5.4\\vwrarchvizproject\\plugins\\vwrarchvizconfig\\source\\vwrarchvizconfig\\public\\vwrarchvizconfigsettings.h",
+            "e:\\unreal projects\\5.4\\vwrarchvizproject\\plugins\\vwrarchvizconfig\\intermediate\\build\\win64\\unrealeditor\\inc\\vwrarchvizconfig\\uht\\vwrarchvizconfigsettings.generated.h",
+            "d:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\rotatingmovementcomponent.h",
+            "d:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\movementcomponent.h",
+            "d:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\movementcomponent.generated.h",
+            "d:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\rotatingmovementcomponent.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

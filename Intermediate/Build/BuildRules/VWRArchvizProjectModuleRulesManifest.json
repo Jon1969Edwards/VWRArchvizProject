@@ -1,0 +1,10 @@
+{
+	"SourceFiles": [
+		"E:\\Unreal Projects\\5.4\\VWRArchvizProject\\Source\\VWRArchvizProject\\VWRArchvizProject.Build.cs",
+		"E:\\Unreal Projects\\5.4\\VWRArchvizProject\\Plugins\\VWRArchvizConfig\\Source\\VWRArchvizConfigEditor\\VWRArchvizConfigEditor.Build.cs",
+		"E:\\Unreal Projects\\5.4\\VWRArchvizProject\\Plugins\\VWRArchvizConfig\\Source\\VWRArchvizConfig\\VWRArchvizConfig.Build.cs",
+		"E:\\Unreal Projects\\5.4\\VWRArchvizProject\\Source\\VWRArchvizProject.Target.cs",
+		"E:\\Unreal Projects\\5.4\\VWRArchvizProject\\Source\\VWRArchvizProjectEditor.Target.cs"
+	],
+	"EngineVersion": "5.4.4"
+}

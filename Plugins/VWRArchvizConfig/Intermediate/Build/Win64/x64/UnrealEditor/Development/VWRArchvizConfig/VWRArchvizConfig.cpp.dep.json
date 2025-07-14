@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\unreal projects\\5.4\\vwrarchvizproject\\plugins\\vwrarchvizconfig\\source\\vwrarchvizconfig\\private\\vwrarchvizconfig.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\unreal projects\\5.4\\vwrarchvizproject\\intermediate\\build\\win64\\x64\\vwrarchvizprojecteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.inclorderoldest.h.pch",
+        "Includes": [
+            "e:\\unreal projects\\5.4\\vwrarchvizproject\\plugins\\vwrarchvizconfig\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\vwrarchvizconfig\\definitions.vwrarchvizconfig.h",
+            "e:\\unreal projects\\5.4\\vwrarchvizproject\\plugins\\vwrarchvizconfig\\source\\vwrarchvizconfig\\public\\vwrarchvizconfig.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

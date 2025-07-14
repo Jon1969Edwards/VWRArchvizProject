@@ -1,0 +1,15 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.VWRArchvizConfig.cpp.obj": [
+			"ArchvizConfigManager.gen.cpp.obj",
+			"VWRArchvizConfig.init.gen.cpp.obj",
+			"VWRArchvizConfigBPLibrary.gen.cpp.obj",
+			"VWRArchvizConfigSettings.gen.cpp.obj",
+			"ArchvizConfigManager.cpp.obj",
+			"VWRArchvizConfig.cpp.obj",
+			"VWRArchvizConfigBPLibrary.cpp.obj",
+			"VWRArchvizConfigSettings.cpp.obj"
+		]
+	}
+}

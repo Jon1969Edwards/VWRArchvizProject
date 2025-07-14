@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "VWRArchvizProject",
+			"Path": "..\\Source\\VWRArchvizProject.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "VWRArchvizProjectEditor",
+			"Path": "..\\Source\\VWRArchvizProjectEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
