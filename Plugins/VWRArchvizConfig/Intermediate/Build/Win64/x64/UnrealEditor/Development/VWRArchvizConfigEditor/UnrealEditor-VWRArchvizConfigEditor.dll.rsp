@@ -36,7 +36,7 @@
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN:6
 "E:\Unreal Projects\5.4\VWRArchvizProject\Intermediate\Build\Win64\x64\VWRArchvizProjectEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.InclOrderOldest.h.obj"
-"E:\Unreal Projects\5.4\VWRArchvizProject\Plugins\VWRArchvizConfig\Intermediate\Build\Win64\x64\UnrealEditor\Development\VWRArchvizConfigEditor\VWRArchvizConfigEditorModule.cpp.obj"
+"E:\Unreal Projects\5.4\VWRArchvizProject\Plugins\VWRArchvizConfig\Intermediate\Build\Win64\x64\UnrealEditor\Development\VWRArchvizConfigEditor\Module.VWRArchvizConfigEditor.cpp.obj"
 "E:\Unreal Projects\5.4\VWRArchvizProject\Plugins\VWRArchvizConfig\Intermediate\Build\Win64\x64\UnrealEditor\Development\VWRArchvizConfigEditor\Default.rc2.res"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Core\UnrealEditor-Core.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\CoreUObject\UnrealEditor-CoreUObject.lib"

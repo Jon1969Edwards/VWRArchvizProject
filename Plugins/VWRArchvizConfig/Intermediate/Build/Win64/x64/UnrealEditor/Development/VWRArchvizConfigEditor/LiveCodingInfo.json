@@ -1,5 +1,8 @@
 {
 	"RemapUnityFiles": 
 	{
+		"Module.VWRArchvizConfigEditor.cpp.obj": [
+			"VWRArchvizConfigEditorModule.cpp.obj"
+		]
 	}
 }
