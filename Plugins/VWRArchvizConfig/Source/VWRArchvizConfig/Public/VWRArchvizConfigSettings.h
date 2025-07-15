@@ -17,6 +17,13 @@ class VWRARCHVIZCONFIG_API UVWRArchvizConfigSettings : public UDeveloperSettings
 
 public:
 
+    /** Blueprint-callable setter for auto-attach. */
+    UFUNCTION(BlueprintCallable, Category="Attachment")
+    void SetAutoAttach(bool bInAutoAttach)
+    {
+        bAutoAttach = bInAutoAttach;
+    }
+    
     /** Offset at which new items spawn. */
     UPROPERTY(
         EditAnywhere,
