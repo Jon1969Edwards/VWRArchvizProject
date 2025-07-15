@@ -17,7 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeVWRArchvizConfig_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x9DCB8A87,
+				0x58864522,
 				0x0C4BAE20,
 				METADATA_PARAMS(0, nullptr)
 			};
@@ -25,5 +25,5 @@ void EmptyLinkFunctionForGeneratedCodeVWRArchvizConfig_init() {}
 		}
 		return Z_Registration_Info_UPackage__Script_VWRArchvizConfig.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_VWRArchvizConfig(Z_Construct_UPackage__Script_VWRArchvizConfig, TEXT("/Script/VWRArchvizConfig"), Z_Registration_Info_UPackage__Script_VWRArchvizConfig, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x9DCB8A87, 0x0C4BAE20));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_VWRArchvizConfig(Z_Construct_UPackage__Script_VWRArchvizConfig, TEXT("/Script/VWRArchvizConfig"), Z_Registration_Info_UPackage__Script_VWRArchvizConfig, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x58864522, 0x0C4BAE20));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

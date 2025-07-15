@@ -4,4 +4,3 @@
 #include "E:/Unreal Projects/5.4/VWRArchvizProject/Plugins/VWRArchvizConfig/Source/VWRArchvizConfig/Private/ArchvizConfigManager.cpp"
 #include "E:/Unreal Projects/5.4/VWRArchvizProject/Plugins/VWRArchvizConfig/Source/VWRArchvizConfig/Private/VWRArchvizConfig.cpp"
 #include "E:/Unreal Projects/5.4/VWRArchvizProject/Plugins/VWRArchvizConfig/Source/VWRArchvizConfig/Private/VWRArchvizConfigBPLibrary.cpp"
-#include "E:/Unreal Projects/5.4/VWRArchvizProject/Plugins/VWRArchvizConfig/Source/VWRArchvizConfig/Private/VWRArchvizConfigSettings.cpp"

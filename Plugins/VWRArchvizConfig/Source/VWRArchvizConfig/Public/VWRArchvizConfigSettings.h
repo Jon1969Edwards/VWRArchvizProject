@@ -33,6 +33,14 @@ public:
     )
     FVector SpawnOffset = FVector::ZeroVector;
 
+    /** Blueprint‐callable setter for SpawnOffset. */
+    UFUNCTION(BlueprintCallable, Category="Spawning")
+    void SetSpawnOffset(FVector InOffset)
+    {
+        SpawnOffset = InOffset;
+        SaveConfig();  // writes back to DefaultGame.ini so it persists
+    }
+
     /** Auto‐rotation speed. */
     UPROPERTY(
         EditAnywhere,

@@ -7,9 +7,9 @@
 			"ArchvizConfigManager.cpp.obj",
 			"VWRArchvizConfig.cpp.obj",
 			"VWRArchvizConfigBPLibrary.cpp.obj",
-			"VWRArchvizConfigSettings.cpp.obj",
 			"VWRArchvizConfig.init.gen.cpp.obj",
-			"VWRArchvizConfigSettings.gen.cpp.obj"
+			"VWRArchvizConfigSettings.gen.cpp.obj",
+			"VWRArchvizConfigSettings.cpp.obj"
 		]
 	}
 }

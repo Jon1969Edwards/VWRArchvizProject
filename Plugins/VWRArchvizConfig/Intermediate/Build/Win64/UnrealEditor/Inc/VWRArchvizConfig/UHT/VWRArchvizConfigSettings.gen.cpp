@@ -67,12 +67,117 @@ DEFINE_FUNCTION(UVWRArchvizConfigSettings::execGetDefaultMaterial)
 }
 // End Class UVWRArchvizConfigSettings Function GetDefaultMaterial
 
+// Begin Class UVWRArchvizConfigSettings Function SetAutoAttach
+struct Z_Construct_UFunction_UVWRArchvizConfigSettings_SetAutoAttach_Statics
+{
+	struct VWRArchvizConfigSettings_eventSetAutoAttach_Parms
+	{
+		bool bInAutoAttach;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Attachment" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Blueprint-callable setter for auto-attach. */" },
+#endif
+		{ "ModuleRelativePath", "Public/VWRArchvizConfigSettings.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Blueprint-callable setter for auto-attach." },
+#endif
+	};
+#endif // WITH_METADATA
+	static void NewProp_bInAutoAttach_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_bInAutoAttach;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+void Z_Construct_UFunction_UVWRArchvizConfigSettings_SetAutoAttach_Statics::NewProp_bInAutoAttach_SetBit(void* Obj)
+{
+	((VWRArchvizConfigSettings_eventSetAutoAttach_Parms*)Obj)->bInAutoAttach = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UVWRArchvizConfigSettings_SetAutoAttach_Statics::NewProp_bInAutoAttach = { "bInAutoAttach", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(VWRArchvizConfigSettings_eventSetAutoAttach_Parms), &Z_Construct_UFunction_UVWRArchvizConfigSettings_SetAutoAttach_Statics::NewProp_bInAutoAttach_SetBit, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVWRArchvizConfigSettings_SetAutoAttach_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVWRArchvizConfigSettings_SetAutoAttach_Statics::NewProp_bInAutoAttach,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UVWRArchvizConfigSettings_SetAutoAttach_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVWRArchvizConfigSettings_SetAutoAttach_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVWRArchvizConfigSettings, nullptr, "SetAutoAttach", nullptr, nullptr, Z_Construct_UFunction_UVWRArchvizConfigSettings_SetAutoAttach_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVWRArchvizConfigSettings_SetAutoAttach_Statics::PropPointers), sizeof(Z_Construct_UFunction_UVWRArchvizConfigSettings_SetAutoAttach_Statics::VWRArchvizConfigSettings_eventSetAutoAttach_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UVWRArchvizConfigSettings_SetAutoAttach_Statics::Function_MetaDataParams), Z_Construct_UFunction_UVWRArchvizConfigSettings_SetAutoAttach_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UVWRArchvizConfigSettings_SetAutoAttach_Statics::VWRArchvizConfigSettings_eventSetAutoAttach_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UVWRArchvizConfigSettings_SetAutoAttach()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVWRArchvizConfigSettings_SetAutoAttach_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UVWRArchvizConfigSettings::execSetAutoAttach)
+{
+	P_GET_UBOOL(Z_Param_bInAutoAttach);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->SetAutoAttach(Z_Param_bInAutoAttach);
+	P_NATIVE_END;
+}
+// End Class UVWRArchvizConfigSettings Function SetAutoAttach
+
+// Begin Class UVWRArchvizConfigSettings Function SetSpawnOffset
+struct Z_Construct_UFunction_UVWRArchvizConfigSettings_SetSpawnOffset_Statics
+{
+	struct VWRArchvizConfigSettings_eventSetSpawnOffset_Parms
+	{
+		FVector InOffset;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Spawning" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Blueprint\xe2\x80\x90""callable setter for SpawnOffset. */" },
+#endif
+		{ "ModuleRelativePath", "Public/VWRArchvizConfigSettings.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Blueprint\xe2\x80\x90""callable setter for SpawnOffset." },
+#endif
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_InOffset;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UVWRArchvizConfigSettings_SetSpawnOffset_Statics::NewProp_InOffset = { "InOffset", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(VWRArchvizConfigSettings_eventSetSpawnOffset_Parms, InOffset), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVWRArchvizConfigSettings_SetSpawnOffset_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVWRArchvizConfigSettings_SetSpawnOffset_Statics::NewProp_InOffset,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UVWRArchvizConfigSettings_SetSpawnOffset_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVWRArchvizConfigSettings_SetSpawnOffset_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVWRArchvizConfigSettings, nullptr, "SetSpawnOffset", nullptr, nullptr, Z_Construct_UFunction_UVWRArchvizConfigSettings_SetSpawnOffset_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVWRArchvizConfigSettings_SetSpawnOffset_Statics::PropPointers), sizeof(Z_Construct_UFunction_UVWRArchvizConfigSettings_SetSpawnOffset_Statics::VWRArchvizConfigSettings_eventSetSpawnOffset_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UVWRArchvizConfigSettings_SetSpawnOffset_Statics::Function_MetaDataParams), Z_Construct_UFunction_UVWRArchvizConfigSettings_SetSpawnOffset_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UVWRArchvizConfigSettings_SetSpawnOffset_Statics::VWRArchvizConfigSettings_eventSetSpawnOffset_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UVWRArchvizConfigSettings_SetSpawnOffset()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVWRArchvizConfigSettings_SetSpawnOffset_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UVWRArchvizConfigSettings::execSetSpawnOffset)
+{
+	P_GET_STRUCT(FVector,Z_Param_InOffset);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->SetSpawnOffset(Z_Param_InOffset);
+	P_NATIVE_END;
+}
+// End Class UVWRArchvizConfigSettings Function SetSpawnOffset
+
 // Begin Class UVWRArchvizConfigSettings
 void UVWRArchvizConfigSettings::StaticRegisterNativesUVWRArchvizConfigSettings()
 {
 	UClass* Class = UVWRArchvizConfigSettings::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
 		{ "GetDefaultMaterial", &UVWRArchvizConfigSettings::execGetDefaultMaterial },
+		{ "SetAutoAttach", &UVWRArchvizConfigSettings::execSetAutoAttach },
+		{ "SetSpawnOffset", &UVWRArchvizConfigSettings::execSetSpawnOffset },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
@@ -159,6 +264,8 @@ struct Z_Construct_UClass_UVWRArchvizConfigSettings_Statics
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UVWRArchvizConfigSettings_GetDefaultMaterial, "GetDefaultMaterial" }, // 3829401683
+		{ &Z_Construct_UFunction_UVWRArchvizConfigSettings_SetAutoAttach, "SetAutoAttach" }, // 826143179
+		{ &Z_Construct_UFunction_UVWRArchvizConfigSettings_SetSpawnOffset, "SetSpawnOffset" }, // 1562102839
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -226,10 +333,10 @@ UVWRArchvizConfigSettings::~UVWRArchvizConfigSettings() {}
 struct Z_CompiledInDeferFile_FID_VWRArchvizProject_Plugins_VWRArchvizConfig_Source_VWRArchvizConfig_Public_VWRArchvizConfigSettings_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UVWRArchvizConfigSettings, UVWRArchvizConfigSettings::StaticClass, TEXT("UVWRArchvizConfigSettings"), &Z_Registration_Info_UClass_UVWRArchvizConfigSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVWRArchvizConfigSettings), 3360059273U) },
+		{ Z_Construct_UClass_UVWRArchvizConfigSettings, UVWRArchvizConfigSettings::StaticClass, TEXT("UVWRArchvizConfigSettings"), &Z_Registration_Info_UClass_UVWRArchvizConfigSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVWRArchvizConfigSettings), 1841597383U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_VWRArchvizProject_Plugins_VWRArchvizConfig_Source_VWRArchvizConfig_Public_VWRArchvizConfigSettings_h_443196140(TEXT("/Script/VWRArchvizConfig"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_VWRArchvizProject_Plugins_VWRArchvizConfig_Source_VWRArchvizConfig_Public_VWRArchvizConfigSettings_h_3399783437(TEXT("/Script/VWRArchvizConfig"),
 	Z_CompiledInDeferFile_FID_VWRArchvizProject_Plugins_VWRArchvizConfig_Source_VWRArchvizConfig_Public_VWRArchvizConfigSettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_VWRArchvizProject_Plugins_VWRArchvizConfig_Source_VWRArchvizConfig_Public_VWRArchvizConfigSettings_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
