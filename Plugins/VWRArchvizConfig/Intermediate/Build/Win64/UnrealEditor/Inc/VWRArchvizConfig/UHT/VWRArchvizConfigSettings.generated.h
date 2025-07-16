@@ -17,6 +17,7 @@ class UMaterialInterface;
 
 #define FID_VWRArchvizProject_Plugins_VWRArchvizConfig_Source_VWRArchvizConfig_Public_VWRArchvizConfigSettings_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execGetDefaultMaterial); \
+	DECLARE_FUNCTION(execSetRotationYaw); \
 	DECLARE_FUNCTION(execSetSpawnOffset); \
 	DECLARE_FUNCTION(execSetAutoAttach);
 

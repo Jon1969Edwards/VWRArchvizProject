@@ -121,6 +121,55 @@ DEFINE_FUNCTION(UVWRArchvizConfigSettings::execSetAutoAttach)
 }
 // End Class UVWRArchvizConfigSettings Function SetAutoAttach
 
+// Begin Class UVWRArchvizConfigSettings Function SetRotationYaw
+struct Z_Construct_UFunction_UVWRArchvizConfigSettings_SetRotationYaw_Statics
+{
+	struct VWRArchvizConfigSettings_eventSetRotationYaw_Parms
+	{
+		float InYaw;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Auto Rotation" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Blueprint\xe2\x80\x90""callable setter for RotationRate.Yaw */" },
+#endif
+		{ "ModuleRelativePath", "Public/VWRArchvizConfigSettings.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Blueprint\xe2\x80\x90""callable setter for RotationRate.Yaw" },
+#endif
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_InYaw;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UVWRArchvizConfigSettings_SetRotationYaw_Statics::NewProp_InYaw = { "InYaw", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(VWRArchvizConfigSettings_eventSetRotationYaw_Parms, InYaw), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVWRArchvizConfigSettings_SetRotationYaw_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVWRArchvizConfigSettings_SetRotationYaw_Statics::NewProp_InYaw,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UVWRArchvizConfigSettings_SetRotationYaw_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVWRArchvizConfigSettings_SetRotationYaw_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVWRArchvizConfigSettings, nullptr, "SetRotationYaw", nullptr, nullptr, Z_Construct_UFunction_UVWRArchvizConfigSettings_SetRotationYaw_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVWRArchvizConfigSettings_SetRotationYaw_Statics::PropPointers), sizeof(Z_Construct_UFunction_UVWRArchvizConfigSettings_SetRotationYaw_Statics::VWRArchvizConfigSettings_eventSetRotationYaw_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UVWRArchvizConfigSettings_SetRotationYaw_Statics::Function_MetaDataParams), Z_Construct_UFunction_UVWRArchvizConfigSettings_SetRotationYaw_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UVWRArchvizConfigSettings_SetRotationYaw_Statics::VWRArchvizConfigSettings_eventSetRotationYaw_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UVWRArchvizConfigSettings_SetRotationYaw()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVWRArchvizConfigSettings_SetRotationYaw_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UVWRArchvizConfigSettings::execSetRotationYaw)
+{
+	P_GET_PROPERTY(FFloatProperty,Z_Param_InYaw);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->SetRotationYaw(Z_Param_InYaw);
+	P_NATIVE_END;
+}
+// End Class UVWRArchvizConfigSettings Function SetRotationYaw
+
 // Begin Class UVWRArchvizConfigSettings Function SetSpawnOffset
 struct Z_Construct_UFunction_UVWRArchvizConfigSettings_SetSpawnOffset_Statics
 {
@@ -177,6 +226,7 @@ void UVWRArchvizConfigSettings::StaticRegisterNativesUVWRArchvizConfigSettings()
 	static const FNameNativePtrPair Funcs[] = {
 		{ "GetDefaultMaterial", &UVWRArchvizConfigSettings::execGetDefaultMaterial },
 		{ "SetAutoAttach", &UVWRArchvizConfigSettings::execSetAutoAttach },
+		{ "SetRotationYaw", &UVWRArchvizConfigSettings::execSetRotationYaw },
 		{ "SetSpawnOffset", &UVWRArchvizConfigSettings::execSetSpawnOffset },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -265,6 +315,7 @@ struct Z_Construct_UClass_UVWRArchvizConfigSettings_Statics
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UVWRArchvizConfigSettings_GetDefaultMaterial, "GetDefaultMaterial" }, // 3829401683
 		{ &Z_Construct_UFunction_UVWRArchvizConfigSettings_SetAutoAttach, "SetAutoAttach" }, // 826143179
+		{ &Z_Construct_UFunction_UVWRArchvizConfigSettings_SetRotationYaw, "SetRotationYaw" }, // 2032318836
 		{ &Z_Construct_UFunction_UVWRArchvizConfigSettings_SetSpawnOffset, "SetSpawnOffset" }, // 1562102839
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -333,10 +384,10 @@ UVWRArchvizConfigSettings::~UVWRArchvizConfigSettings() {}
 struct Z_CompiledInDeferFile_FID_VWRArchvizProject_Plugins_VWRArchvizConfig_Source_VWRArchvizConfig_Public_VWRArchvizConfigSettings_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UVWRArchvizConfigSettings, UVWRArchvizConfigSettings::StaticClass, TEXT("UVWRArchvizConfigSettings"), &Z_Registration_Info_UClass_UVWRArchvizConfigSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVWRArchvizConfigSettings), 1841597383U) },
+		{ Z_Construct_UClass_UVWRArchvizConfigSettings, UVWRArchvizConfigSettings::StaticClass, TEXT("UVWRArchvizConfigSettings"), &Z_Registration_Info_UClass_UVWRArchvizConfigSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVWRArchvizConfigSettings), 3964994061U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_VWRArchvizProject_Plugins_VWRArchvizConfig_Source_VWRArchvizConfig_Public_VWRArchvizConfigSettings_h_3399783437(TEXT("/Script/VWRArchvizConfig"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_VWRArchvizProject_Plugins_VWRArchvizConfig_Source_VWRArchvizConfig_Public_VWRArchvizConfigSettings_h_3771632897(TEXT("/Script/VWRArchvizConfig"),
 	Z_CompiledInDeferFile_FID_VWRArchvizProject_Plugins_VWRArchvizConfig_Source_VWRArchvizConfig_Public_VWRArchvizConfigSettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_VWRArchvizProject_Plugins_VWRArchvizConfig_Source_VWRArchvizConfig_Public_VWRArchvizConfigSettings_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

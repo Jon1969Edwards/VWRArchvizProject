@@ -41,6 +41,14 @@ public:
         SaveConfig();  // writes back to DefaultGame.ini so it persists
     }
 
+    /** Blueprint‐callable setter for RotationRate.Yaw */
+    UFUNCTION(BlueprintCallable, Category="Auto Rotation")
+    void SetRotationYaw(float InYaw)
+    {
+        RotationRate.Yaw = InYaw;
+        SaveConfig();
+    }
+
     /** Auto‐rotation speed. */
     UPROPERTY(
         EditAnywhere,
